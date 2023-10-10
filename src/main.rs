@@ -11,10 +11,12 @@ fn main() {
     io::stdin().read_line(&mut number).unwrap();
     number = number.trim().to_string();
 
-    let parse: u128 = number.parse().unwrap();
+    //let parse: u128 = number.parse().unwrap();
+    let parse: BigUint = number.parse().unwrap();
+
 
     // collatz conjecture
-    let mut collatz: CollatzSequence = CollatzSequence::new(parse);
+    //let mut collatz: CollatzSequence = CollatzSequence::new(parse);
     let mut collatz_v2: CollatzEnormousSequence = CollatzEnormousSequence::new(parse);
 
      /* 
@@ -65,10 +67,10 @@ struct CollatzEnormousSequence {
 }
 
 impl CollatzEnormousSequence {
-    fn new(start: u128) -> Self {
+    fn new(start: BigUint) -> Self {
         CollatzEnormousSequence {
             i: 0,
-            seq: vec![BigUint::from(start)]
+            seq: vec![start]
         }
     }
 
