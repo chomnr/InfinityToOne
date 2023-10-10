@@ -14,7 +14,6 @@ fn main() {
     //let parse: u128 = number.parse().unwrap();
     let parse: BigUint = number.parse().unwrap();
 
-
     // collatz conjecture
     //let mut collatz: CollatzSequence = CollatzSequence::new(parse);
     let mut collatz_v2: CollatzEnormousSequence = CollatzEnormousSequence::new(parse);
