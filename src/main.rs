@@ -20,18 +20,17 @@ fn main() {
     let mut collatz: CollatzSequence = CollatzSequence::new(parse);
     let mut collatz_v2: CollatzEnormousSequence = CollatzEnormousSequence::new(parse);
 
-
-    // keep looping until last value == 1;
-    /* 
+     /* 
     while collatz.seq[collatz.i] != 1 {
         // sequence the collatz conjecture...
         collatz.sequence();
     }*/
 
     while collatz_v2.seq[collatz_v2.i] != BigUint::from(1 as usize) {
-        // sequence the collatz conjecture...
         collatz_v2.sequence();
     }
+
+    
 }
 
 
