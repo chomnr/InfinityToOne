@@ -17,8 +17,8 @@ fn main() {
     let parse: u128 = number.parse().unwrap();
 
     // collatz conjecture
-    let mut collatz = CollatzSequence::new(parse);
-    let mut collatz_v2 = CollatzEnormousSequence::new(parse);
+    let mut collatz: CollatzSequence = CollatzSequence::new(parse);
+    let mut collatz_v2: CollatzEnormousSequence = CollatzEnormousSequence::new(parse);
 
 
     // keep looping until last value == 1;
