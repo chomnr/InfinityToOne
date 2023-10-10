@@ -28,7 +28,6 @@ fn main() {
     }
 }
 
-
 // Sequence smaller numbers
 struct CollatzSequence {
     i: usize,
@@ -59,6 +58,7 @@ impl CollatzSequence {
     }
 }
 
+// Sequence larger numbers
 struct CollatzEnormousSequence {
     i: usize,
     seq: Vec<BigUint>
