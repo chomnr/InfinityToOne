@@ -4,8 +4,6 @@ use std::{io::{self, Write}};
 use num_bigint::BigUint;
 
 fn main() {
-    
-    // read input
     print!("Enter a positive integer: ");
     io::stdout().flush().unwrap();
 
@@ -13,7 +11,6 @@ fn main() {
     io::stdin().read_line(&mut number).unwrap();
     number = number.trim().to_string();
 
-    // parse input
     let parse: u128 = number.parse().unwrap();
 
     // collatz conjecture
@@ -29,8 +26,6 @@ fn main() {
     while collatz_v2.seq[collatz_v2.i] != BigUint::from(1 as usize) {
         collatz_v2.sequence();
     }
-
-    
 }
 
 
