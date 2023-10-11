@@ -1,5 +1,4 @@
-use core::num;
-use std::{io::{self, Write}};
+use std::io::{self, Write};
 
 use num_bigint::BigUint;
 
